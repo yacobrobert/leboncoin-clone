@@ -9,6 +9,7 @@ const buttons = (props) => {
     const styles = makeStyles(theme => ({
         root: {
             flexGrow: 1,
+            
         },
         button: {
             margin: theme.spacing(1),
@@ -19,8 +20,8 @@ const buttons = (props) => {
 
     return (
         <div className={classes.root}>
-            <Grid container direction="row" justify="center" alignItems="center" spacing={2}>
-                <Grid item xs={11} sm={5} align="center">
+            <Grid container direction="row" justify="center" spacing={2}>
+                <Grid item xs={12} sm={6} align="center">
                     <Button
                         className={classes.button}
                         variant="contained"
@@ -29,7 +30,7 @@ const buttons = (props) => {
                         startIcon={<AddBoxOutlinedIcon />}>Sell a new object
                     </Button>
                 </Grid>
-                <Grid item xs={11} sm={5} align="center">
+                <Grid item xs={12} sm={6} align="center">
                     <Button
                         className={classes.button}
                         variant="contained"
