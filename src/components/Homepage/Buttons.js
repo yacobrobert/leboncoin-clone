@@ -18,7 +18,6 @@ const buttons = (props) => {
         <div>
             <Box display="flex" justifyContent="center" >
                 <Button
-                display={{ xs: 'block' }}
                     className={classes.button}
                     variant="contained"
                     color="secondary"
