@@ -8,12 +8,8 @@ import Grid from '@material-ui/core/Grid';
 const buttons = (props) => {
     const styles = makeStyles(theme => ({
         root: {
-            flexGrow: 1,
-            
+            flexGrow: 1,            
         },
-        button: {
-            margin: theme.spacing(1),
-        }
     }));
 
     const classes = styles();
