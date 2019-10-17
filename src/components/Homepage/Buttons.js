@@ -23,7 +23,7 @@ const buttons = (props) => {
                         variant="contained"
                         color="secondary"
                         fullWidth={true}
-                        startIcon={<AddBoxOutlinedIcon />}>Sell a new object
+                        startIcon={<AddBoxOutlinedIcon />}>Vends tes armes
                     </Button>
                 </Grid>
                 <Grid item xs={12} sm={6} align="center">
@@ -32,7 +32,7 @@ const buttons = (props) => {
                         variant="contained"
                         color="primary"
                         fullWidth={true}
-                        startIcon={<GpsFixedOutlinedIcon />}>Find around me
+                        startIcon={<GpsFixedOutlinedIcon />}>Localisez moi !
                     </Button>                      
                 </Grid>
             </Grid>         
