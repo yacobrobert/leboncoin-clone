@@ -7,8 +7,6 @@ import Grid from '@material-ui/core/Grid';
 import Buttons from './Buttons';
 import CardHomePage from './CardHomePage';
 
-
-
 const homepage = (props) => {
     const styles = makeStyles(theme => ({
         root: {
@@ -35,8 +33,6 @@ const homepage = (props) => {
             <Buttons />          
         </div>
     );    
-}
-
-
+};
 
 export default homepage;

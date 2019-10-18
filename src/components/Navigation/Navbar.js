@@ -16,18 +16,18 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function ButtonAppBar() {
+export default function Navbar(props) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+          <IconButton onClick={props.clicked} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" align="center" className={classes.title}>
-            LeBonCoin
+           Mordor BonCoin
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
