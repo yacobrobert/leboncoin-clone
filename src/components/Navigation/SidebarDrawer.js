@@ -9,6 +9,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 
+
+import Button from '@material-ui/core/Button';
+
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -25,6 +28,7 @@ export default function SidebarDrawer(props) {
   });
 
   const toggleDrawer = (open) => event => {
+
     setState({ ...state, 'left': open });
   };
 
@@ -32,8 +36,8 @@ export default function SidebarDrawer(props) {
     <div
       className={classes.list}
       role="presentation"
-      onClick={toggleDrawer('left', false)}
-      onKeyDown={toggleDrawer('left', false)}
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
     >
       <List>
         {['Annonces', 'Achats', 'Messages', 'Favoris'].map((text, index) => (
@@ -56,8 +60,9 @@ export default function SidebarDrawer(props) {
   );
 
   return (
-    <div>
-      <Drawer open={props.toggleNavbar} onClose={toggleDrawer(false)}>
+    <div>    
+      <Button onClick={toggleDrawer(true)}>Open Left</Button>
+      <Drawer open={state.left} onClose={toggleDrawer(false)}>
         {sideList()}
       </Drawer>
     </div>
