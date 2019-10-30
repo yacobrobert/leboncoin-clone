@@ -5,6 +5,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import MordorMap from '../media/images/carte-monde.jpeg';
 
 const cardHomePage = (props) => {
     const cardStyles = makeStyles({
@@ -23,7 +24,7 @@ const cardHomePage = (props) => {
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image="http://les-aigles-de-manwe.e-monsite.com/medias/album/lotro-carte-monde.jpeg"
+                    image={MordorMap}
                     title="Map of middle earth"
                 />
                 <CardContent>
@@ -31,7 +32,7 @@ const cardHomePage = (props) => {
                     Terre du milieu
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                Cartes de la Terre du Milieu au 3ème Age, à utiliser pour trouver les ventes.
+                Cartes de la Terre du Milieu. A utiliser pour trouver les annonces de ventes.
                 </Typography>
                 </CardContent>
             </CardActionArea>           
