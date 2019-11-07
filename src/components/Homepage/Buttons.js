@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import AddBoxOutlinedIcon from '@material-ui/icons/AddBoxOutlined';
 import GpsFixedOutlinedIcon from '@material-ui/icons/GpsFixedOutlined';
@@ -19,6 +20,7 @@ const buttons = (props) => {
             <Grid container direction="row" justify="center" spacing={2}>
                 <Grid item xs={12} sm={6} align="center">
                     <Button
+                        component={Link} to="/weapons"
                         className={classes.button}
                         variant="contained"
                         color="secondary"
@@ -29,6 +31,7 @@ const buttons = (props) => {
                 <Grid item xs={12} sm={6} align="center">
                     <Button
                         className={classes.button}
+                        component={Link} to="/map"
                         variant="contained"
                         color="primary"
                         fullWidth={true}

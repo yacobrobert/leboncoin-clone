@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -78,9 +79,9 @@ export default function Navbar(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" align="center" className={classes.title}>
-           Mordor BonCoin
+           <Button component={Link} to="/" color="inherit">Mordor BonCoin</Button>
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button component={Link} to="/login" color="inherit">Login</Button>
         </Toolbar>
       </AppBar>    
       <Drawer open={state.left} onClose={toggleDrawer(false)}>
