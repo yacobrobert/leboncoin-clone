@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Route, Switch } from 'react-router-dom';
-import Map from '../Map/Map';
+import GoogleApiWrapper from '../Map/GoogleApiWrapper';
 import Weapons from '../Weapons/Weapons';
 import Login from '../Login/Login';
 
@@ -27,7 +27,7 @@ const homepage = (props) => {
                     <Switch>
                         <Route path="/weapons" component={Weapons}></Route>
                         <Route path="/login" component={Login}></Route>
-                        <Route path="/map" component={Map}></Route>
+                        <Route path="/map" component={GoogleApiWrapper}></Route>
                         <Route path="/" exact component={CardHomePage}></Route>
                     </Switch>
                 </Grid>

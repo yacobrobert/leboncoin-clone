@@ -13,12 +13,17 @@ import PersonIcon from '@material-ui/icons/Person';
 import AddIcon from '@material-ui/icons/Add';
 import Typography from '@material-ui/core/Typography';
 import { blue } from '@material-ui/core/colors';
+import { classes } from 'istanbul-lib-coverage';
 
 const emails = ['emmanuel-macron@gmail.com', 'snoopi@gmail.com', 'steven-spielberg@apple-tv.com'];
 const useStyles = makeStyles({
   avatar: {
     backgroundColor: blue[100],
     color: blue[600],
+  },
+  root: {
+    justifyContent: 'center',
+    justify: "center"
   },
 });
 
@@ -82,8 +87,8 @@ export default function SimpleDialogDemo() {
   };
 
   return (
-    <div>
-      <Typography variant="subtitle1">Selected: {selectedValue}</Typography>
+    <div className={classes.root}>
+      <Typography variant="subtitle1">Profil selectionné : {selectedValue}</Typography>
       <br />
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
         Select your profile
