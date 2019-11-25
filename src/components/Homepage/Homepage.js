@@ -22,7 +22,7 @@ const homepage = (props) => {
     
     return (
         <div className={classes.root}>               
-            <Grid container direction="row" alignItems="center" justify="center" spacing={2}>
+            <Grid container alignItems="center" justify="center" spacing={2}>
                 <Grid item xl={12}>
                     <Switch>
                         <Route path="/weapons" component={Weapons}></Route>
