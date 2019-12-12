@@ -14,7 +14,7 @@ const homepage = (props) => {
         root: {
             padding: theme.spacing(1, 1),
             margin: theme.spacing(1),
-            flexGrow: 1,       
+            flexGrow: 1, 
         },
     }));
 
@@ -22,8 +22,8 @@ const homepage = (props) => {
     
     return (
         <div className={classes.root}>               
-            <Grid container alignItems="center" justify="center" spacing={2}>
-                <Grid item xl={12}>
+            <Grid container alignItems="center" justify="center" spacing={2}  >
+                <Grid>
                     <Switch>
                         <Route path="/weapons" component={Weapons}></Route>
                         <Route path="/login" component={Login}></Route>
